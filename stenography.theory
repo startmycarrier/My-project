@@ -1,0 +1,91 @@
+Steganography is the practice of hiding information in another message or object so that it's not easily detected. The word "steganography" comes from the
+Greek words steganos (hidden or covered) and graphein (to write). 
+
+How does steganography work?
+
+ * Least significant bit (LSB) steganography: The most common technique, which hides data in the least significant bits of an image 
+ * Network steganography: Hides data in network communication protocols, such as TCP/IP 
+ * Word and letter substitution: A method of hiding text by replacing letters or words 
+ * Video steganography: Embeds data in a video file 
+
+ Different types of steganography:
+  1 Text steganography
+  2 Image steganography
+  3 Audio steganography
+  4 vedio Steganography
+  5 Network or protocol Steganography
+  
+Steganography Tools:
+  1 openstego
+  2 steghide
+  3 outguess
+  4 hide n shoot
+  
+ Examples of steganography: 
+ .Hiding a message in the title or context of an image or video
+ .Misspelling words to suggest a different meaning
+ .Embedding text in a picture
+ .Backward masking a message in an audio file
+ 
+Uses of steganography:
+steganography can be used to hide secret messages or code .however,it can also be used by malware devlopers to hide malicious code
+
+Steganography is the practice of hiding information within other files, such as images, audio, or text, to conceal its existence. 
+Below is a step-by-step guide to performing image-based steganography, where we hide a secret message inside an image.
+
+Step 1: Choose a Steganography Tool
+
+There are several tools available for steganography, such as:
+OpenStego (open-source, supports watermarking and data hiding)
+Steghide (command-line tool for embedding messages in images or audio)
+SilentEye (GUI-based tool for Windows and Linux)
+Hide and Seek (Android app)
+
+Step 2: Install and Open the Tool
+
+1. Download and install your preferred steganography tool.
+2. Open the tool and prepare your carrier file (an image that will hide the message).
+3. Have your secret message ready (text, file, or another image).
+
+Step 3: Hide the Message in an Image
+
+Using OpenStego (GUI-based)
+1. Open OpenStego.
+2. Select the "Embed Data" option.
+3. Choose the cover file (image to hide data in).
+4. Select the secret file (text or another file to hide).
+5. Set a password (optional but recommended for encryption).
+6. Click "Embed" to create the stego image (the new image with hidden data).
+
+Using Steghide (Command Line)
+1. Open a command prompt or terminal.
+2. Use the command:
+     steghide embed -cf cover.jpg -ef secret.txt -sf output.jpg
+          cover.jpg → Image used as a cover.
+          secret.txt → File you want to hide.
+          output.jpg → New stego image with hidden data.
+3. Enter a passphrase when prompted.
+
+Step 4: Extract the Hidden Message
+
+Using OpenStego
+
+1. Open OpenStego.
+2. Select "Extract Data".
+3. Choose the stego image.
+4. Enter the password (if used).
+5. Extract the hidden file.
+     Using Steghide (Command Line)
+      1. Use the command:
+          steghide extract -sf output.jpg
+      2. Enter the passphrase when prompted.
+      3. The hidden file will be extracted.
+
+Step 5: Verify the Integrity
+ Check if the extracted message is intact.
+Ensure the stego image looks natural (no noticeable changes).
+
+Would you like recommendations for a tool based on your OS?
+
+
+
