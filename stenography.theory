@@ -83,9 +83,7 @@ Using OpenStego
 
 Step 5: Verify the Integrity
  Check if the extracted message is intact.
-Ensure the stego image looks natural (no noticeable changes).
-
-Would you like recommendations for a tool based on your OS?
+Ensure the stego image looks natural 
 
 
 
